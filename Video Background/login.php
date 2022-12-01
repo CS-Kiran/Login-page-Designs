@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = pg_connect("host=localhost dbname=project user=postgres password=kiran") or die("Unable to connect to database");
+$conn = pg_connect("host=localhost dbname=postgres user=postgres password=postgres") or die("Unable to connect to database");
 if(isset($_POST['email1']) && isset($_POST['pass1']) && isset($_POST['submit1']))
 {
     function validate($data)
